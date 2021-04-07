@@ -227,9 +227,15 @@
 <br />
 <h2>Become a Member of APEA</h2>
 <br />
-<p class="text-center">We are a strong network of 25,000 professionals who work together for a better deal for all our members.</p>
+{% for a in apeamember %}
+
+<p class="text-center">{{a.content}}.</p>
+
+{% endfor %}
 <br />
-<a href="https://www.professionalengineers.org.au/Engineers/Join_APEA/APEA_Signup.aspx" class="PrimaryButton">Join Now</a>
+
+
+<a href="">Join Now</a>
 </div><div>
 
 </div></div>

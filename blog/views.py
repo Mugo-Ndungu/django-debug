@@ -8,7 +8,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post,About,Wedo,WeCanHelp,OurServices,ApeaMembership,JoinUs,PublicPolicy,MyWorkplace
+from .models import Post,About,Wedo,WeCanHelp,OurServices,ApeaMembership,JoinUs,PublicPolicy,MyWorkplace,ApeaMember
 
 
 def home(request):
@@ -80,6 +80,7 @@ def about(request):
     context = {
         'about': About.objects.all(),
         'posts': Post.objects.all(),
+        'apeamember': ApeaMember.objects.all(),
         'title': 'About'
     }
     return render(request, 'blog/about.html', context)
