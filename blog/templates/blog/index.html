@@ -248,10 +248,16 @@
                     
                     
 <div class="highlight-center">
-<h2><a href="#">Who we are</a></h2>
-<p>APEA is not just a union – we are also a professional association with a membership of over 25,000 members.</p>
+<h2><a href="{% url 'blog-about' %}">Who we are</a></h2>
+{% for a in about %}
+
+<p>{{ a.content }}.</p>
+
+
+{% endfor %}
+
 <br />
-<a href="#" class="PrimaryButton">Find out more</a>
+<a href="{% url 'blog-about' %}" class="PrimaryButton">Find out more</a>
 </div>
                     
                     
@@ -292,10 +298,13 @@
                     
                     
 <div class="highlight-center">
-<h2><a href="#">What we do</a></h2>
-<p>APEA also offers members opportunities for professional development, as well as a wide range of services and benefits.</p>
+<h2><a href="{% url 'blog-wedo' %}">What we do</a></h2>
+
+{% for a in wedo %}             
+<p> {{ a.content}}</p>
+{% endfor %}
 <br />
-<a href="https://www.professionalengineers.org.au/Engineers/Content/What_we_do.aspx" class="PrimaryButton">Find out more</a>
+<a href="{% url 'blog-wedo' %}" class="PrimaryButton">Find out more</a>
 </div>
                     
                     

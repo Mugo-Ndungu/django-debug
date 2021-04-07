@@ -150,26 +150,24 @@
 
 			<div class="iMIS-WebPart">
 				<div id="ste_container_ciNewContentHtml2_771348cf5cdc4eac85ba54ab08ea4c49" class="ContentItemContainer"><div id="ctl01_TemplateBody_WebPartManager1_gwpciNewContentHtml2_771348cf5cdc4eac85ba54ab08ea4c49_ciNewContentHtml2_771348cf5cdc4eac85ba54ab08ea4c49_Panel_NewContentHtml2">
-	Being a member of the Association of Professional Engineers Australia (APEA) gives you access to expert advice at every stage of your career, as well as the benefits of being part of a wider network of professionals. Our team is available to resolve all kinds of workplace issues and concerns, whether they be legal, financial or otherwise.
+
+              {% for a in wedo %}
+              {{ a.content}}
+              {% endfor %}
 <br />
-<br />
-As a division of <a href="http://www.professionalsaustralia.org.au/"><span style="color: #42c4e4;">Professionals Australia</span></a>, APEA is able to provide a broad range of membership services. These include:
-<br />
-<br />
-<ul>
-    <li>Access to industry-recognised professional engineer <a href="https://www.rpeng.org.au/RPENG"><span style="color: #42c4e4;">accreditation programs</span></a> established by APEA.</li>
-    <li>access to <a href="https://www.professionalengineers.org.au/Engineers/Content/Services_Content/Workplace.aspx"><span style="color: #42c4e4;">legal representation and advice; </span></a></li>
-    <li>advice on <a href="https://www.professionalengineers.org.au/Engineers/Content/Services_Content/Pay.aspx"><span style="color: #42c4e4;">salary;</span></a></li>
-    <li><a href="https://www.professionalengineers.org.au/Engineers/Content/Services_Content/Insurance.aspx"><span style="color: #42c4e4;">professional insurance;</span></a></li>
-    <li><a href="https://www.professionalengineers.org.au/Engineers/Content/Services_Content/Career.aspx"><span style="color: #42c4e4;">recruitment and resume services;</span></a></li>
-    <li><a href="https://www.professionalengineers.org.au/Engineers/Content/Services_Content/Career.aspx"><span style="color: #42c4e4;">continuing professional development</span></a> to meet your required milestones;</li>
-    <li>the latest news; and</li>
-    <li>the opportunity to take part in campaigns to promote better working conditions.</li>
-</ul>
-<br />
+
+
+
+
 <h2>Here’s how we can help</h2>
 <br />
-When you contact us for help or advice, the Association of Professional Engineers Australia (APEA) guarantees absolute confidentiality at every stage of the process. This means that you will be consulted on any action we propose on your behalf and approaches to other individuals or organisations will not be made without your approval.
+
+{% for a in wehelp %}
+
+{{ a.content}}
+
+{% endfor %}
+
 <br />
 <br />
 
@@ -180,11 +178,12 @@ When you contact us for help or advice, the Association of Professional Engineer
 <br />
 We are committed to:<br />
 <br />
-<ul>
-    <li>providing the highest standard of workplace advice and support to our members;</li>
-    <li>advocating on behalf of scientists so that they are heard by government and industry; and</li>
-    <li>uniting the collective voice of our members to negotiate for improved salaries and conditions.</li>
-</ul>
+
+{% for a in services %}
+{{ a.content }}
+{% endfor %}
+
+
 </div><div>
 
 </div></div>
@@ -205,6 +204,10 @@ We are committed to:<br />
 			<div class="iMIS-WebPart">
 				<div id="ste_container_ciCopyofNewContentHtml3_9018256250a34e46b06725b1984964a2" class="ContentItemContainer"><div id="ctl01_TemplateBody_WebPartManager1_gwpciCopyofNewContentHtml3_9018256250a34e46b06725b1984964a2_ciCopyofNewContentHtml3_9018256250a34e46b06725b1984964a2_Panel_CopyofNewContentHtml3">
 	<img alt="My workplace" class="full-width-image" src="https://www.professionalengineers.org.au/images/global/global-what-we-do-panel-2.jpg" />
+
+
+
+	
 <h5>My workplace</h5>
 <p>We have a team of lawyers and industrial officers available to help with workplace disputes, contract reviews and information about your rights and conditions. Our experts will ensure that all APEA members are, at the very least, being paid and treated as they should be under the law.
 </p>
