@@ -8,7 +8,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post
+from .models import Post,About,Wedo,WeCanHelp,OurServices,ApeaMembership,JoinUs,PublicPolicy
 
 
 def home(request):
@@ -81,7 +81,8 @@ def about(request):
 
 
 def index(request):
-    return render(request, 'blog/index.html', {'title': 'Home'})
+    a = About.objects.all()
+    return render(request, 'blog/index.html', {'title': 'Home'}, {'a': a })
 
 
 

@@ -242,9 +242,7 @@
 	<a href="#">
         <img alt="Who we are" src="https://www.professionalengineers.org.au/images/engineers/engineers-home-who-we-are.jpg" /><br />
     </a>
-                    
-                    
-                    
+                                  
                     
             
                     
@@ -393,7 +391,7 @@
 <div id="WebPartZone6_Page1" class="WebPartZone ">
 <div class="iMIS-WebPart">
 <div id="ste_container_ciNewContentHtml2_b013977ff5a8456e9e1b1070c2636e77" class="ContentItemContainer">
-<div id="ctl01_TemplateBody_WebPartManager1_gwpciNewContentHtml2_b013977ff5a8456e9e1b1070c2636e77_ciNewContentHtml2_b013977ff5a8456e9e1b1070c2636e77_Panel_NewContentHtml2">
+<div id="ctl01_TemplateBody_WebPartManager1_gwpciNewContentHtml2_b013977ff5a8456e9e1b1070c2636e77_ciNewContentHtml2_b01">
 <div class="panel-overlay">
         
         
@@ -402,17 +400,11 @@
         
         
         
+<h2>About Us</h2>      
         
-        
-        
-        
-<h2>About Us</h2>
-<p class="blue-text">The Association of Professional Engineers Australia (APEA) is a union and professional association. We are run by engineers, for engineers.</p>
-<p>When you join APEA, you can feel secure in the knowledge that your work issues, health, education and legal rights are backed by an organisation that understands the challenges and unique regulatory landscape of your profession. In fact, we have been looking out for engineers for nearly 70 years.
-</p>
-<p>APEA gives our members a strong, collective voice to successfully campaign for better pay and working conditions – and therefore a better future.</p>
-    
-    
+{% for b in a %}        
+<p class="blue-text">{{ b.content }}.</p>
+{% endfor %}   
     
     
     
@@ -453,64 +445,15 @@
 <div class="row">
                 
                 
-                
-                
-                
-                
-                
-<div class="col-sm-4">
-<div class="ContentItemContainer">
-<div id="WebPartZone7_Page1" class="WebPartZone ">
-<div class="iMIS-WebPart">
-<div id="ste_container_cinewsarticle1" class="ContentItemContainer">
-<div id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_ListTitle" class="panel " style="border-style:None;">
-<div id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_ListTitle_Head" class="panel-heading">
+     
 
-</div>
-<div id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_ListTitle_BodyContainer" class="panel-body-container">
-<div id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_ListTitle_Body" class="panel-body">
-<div class="TaggedListPanel">
-    
-    
-        
-<div class="BlockTLItem">
-<div class="BlockTLImage"><span>/images/pa/IR _reform.png</span> </div>
-<div class="BlockTLText">
-<h4> <a id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_TaggedListRepeater_ctl00_ctl00_BusinessHyperLink1" href="https://www.professionalengineers.org.au/PA/Latest_News/Workers_succeed_in_blocking_worst_aspects_of_IR_reforms.aspx">Workers succeed in blocking worst aspects of IR reforms</a>  </h4>
-<div class="tags"><span></span> </div>
-<span class="PublishDate">Posted on:<span>19/03/2021</span></span> </div>
-</div>
-    
-    
-    
-    
-            
-<div translate="yes">
-				
-<a id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle1_cinewsarticle1_TaggedListRepeater_ctl01_ViewAllButton" href="javascript:__doPostBack(&#39;ctl01$TemplateBody$WebPartManager1$gwpcinewsarticle1$cinewsarticle1$TaggedListRepeater$ctl01$ViewAllButton&#39;,&#39;&#39;)" style="margin-left: 20px;"></a>
-                
-</div>
-    
-    
-    
-    
-    
-    
-            
-</div>
-</div>
-</div>
-</div>
-<div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
                 
                 
+                
+                
+               
                 
                 
                 
@@ -544,22 +487,7 @@
     
     
     
-    
-<div class="BlockTLItem">
-<div class="BlockTLImage"><span>/images/pa/IR _reform.png</span> </div>
-<div class="BlockTLText">
-    
-<h4>
-<a id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle2_cinewsarticle2_TaggedListRepeater_ctl00_ctl00_BusinessHyperLink1" href="https://www.professionalengineers.org.au/PA/Latest_News/Workers_succeed_in_blocking_worst_aspects_of_IR_reforms.aspx">Workers succeed in blocking worst aspects of IR reforms</a> 
-</h4>
-    
-<div class="tags"><span></span></div>
-    
-<span class="PublishDate">Posted on:<span>19/03/2021</span></span> 
-    
-</div>
-</div>
-    
+ 
     
     
     
@@ -583,23 +511,21 @@
     
     
     
-            
+{% for post in posts %}          
 <div class="BlockTLItem">
-<div class="BlockTLImage"><span>/images/engineers/NSWTrains.png</span> </div>
 <div class="BlockTLText">
     
 <h4>
-<a id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle2_cinewsarticle2_TaggedListRepeater_ctl02_ctl00_BusinessHyperLink1" href="https://www.professionalengineers.org.au/Engineers/News/Evolving_Transport_causing_Safety_Concerns.aspx">Evolving Transport causing Safety Concerns</a> </h4>
+<a id="ctl01_TemplateBody_WebPartManager1_gwpcinewsarticle2_cinewsarticle2_TaggedListRepeater_ctl02_ctl00_BusinessHyperLink1" href="https://www.professionalengineers.org.au/Engineers/News/Evolving_Transport_causing_Safety_Concerns.aspx">{{ post.content }}</a> </h4>
     
 <div class="tags"><span></span> </div>
-<span class="PublishDate">Posted on:<span>3/03/2021</span></span> </div>
+<span class="PublishDate">Posted on:<span>{{ post.date_posted|date:"F d, Y" }}</span></span> </div>
 </div>
-    
-    
+{% endfor %}   
     
     
             
-<div class="BlockTLItem">
+ <div class="BlockTLItem">
 <div class="BlockTLImage"><span>/images/engineers/Skills.png</span> </div>
 <div class="BlockTLText">
 <h4> 
@@ -609,7 +535,7 @@
 <span class="PublishDate">Posted on:<span>3/03/2021</span></span> 
 </div>
 </div>
-    
+     
     
     
     
@@ -647,11 +573,14 @@
     
     
     
+
+
+
     
     
     
     
-    
+<!--     
 <div class="col-sm-4">
 <div class="ContentItemContainer">
 <div id="WebPartZone9_Page1" class="WebPartZone ">
@@ -789,6 +718,10 @@
 </div>
 </div>
 </div>
+ -->
+
+
+
 </div>
 </div>
 </div>
@@ -908,6 +841,7 @@
         
 <div id="fb-root"></div>
  -->
-{% endblock content %}
+
 </body>
+{% endblock content %}
 </html>

@@ -23,7 +23,7 @@ urlpatterns = [
     path('sign', views.sign, name='blog-sign'),
     path('weare', views.weare, name='blog-weare'),
     path('structure', views.structure, name='blog-structure'),
-    path('', views.index, name='blog-home'),
+    path('', views.index, name='blog-index'),
 
 
 ]
