@@ -8,7 +8,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post,About,Wedo,WeCanHelp,OurServices,ApeaMembership,JoinUs,PublicPolicy
+from .models import Post,About,Wedo,WeCanHelp,OurServices,ApeaMembership,JoinUs,PublicPolicy,MyWorkplace
 
 
 def home(request):
@@ -79,6 +79,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def about(request):
     context = {
         'about': About.objects.all(),
+        'posts': Post.objects.all(),
         'title': 'About'
     }
     return render(request, 'blog/about.html', context)
@@ -97,8 +98,16 @@ def index(request):
 
 
 def wedo(request):
-    return render(request, 'blog/wedo.html', {'title': 'Wedo'})
 
+    context = {
+        'title': 'Wedo',
+        'wedo': Wedo.objects.all(),
+        'wehelp': WeCanHelp.objects.all(),
+        'services': OurServices.objects.all(),
+        'work': MyWorkplace.objects.all(),
+    }
+
+    return render(request, 'blog/wedo.html', context)
 
 
 def membership(request):
