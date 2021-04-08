@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+/* parralax images */
+.Wrapper-HomePage .FullWidthArea-StyleBg2 {
+    background: #222122 url(/images/LGEA/FullWidthArea_Bg2.jpg);
+	background-size: cover; -ms-background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;
+}
+
+.Wrapper-HomePage .FullWidthArea-StyleBg4 {
+    background: #222122 url(/images/LGEA/FullWidthArea_Bg4.jpg);
+	background-size: cover; -ms-background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;
+}
+
+
+/*  turn site to proper parralax  */
+.Wrapper-HomePage .FullWidthArea-StyleBg1, .Wrapper-HomePage .FullWidthArea-StyleBg2, .Wrapper-HomePage .FullWidthArea-StyleBg3, .Wrapper-HomePage .FullWidthArea-StyleBg4, .Wrapper-HomePage .FullWidthArea-StyleBg5 {
+    display: block;
+    width: 100%;
+    background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+}
+
+/* End Parralax  */
+
+/* Buttons  */
+html:not(.t-safari) .PrimaryButton, html:not(.t-safari) .SaveAndClose, html:not(.t-safari) .SaveAs, html:not(.t-safari) .UsePrimaryButton .TextButton, html:not(.t-safari) .UsePrimaryButton .TextButtonWithImage, html:not(.t-safari) #masterHeaderActionArea a, html:not(.t-safari) .RadGrid input.PrimaryButton, html:not(.t-safari) .Spotlight .TextButton, html:not(.t-safari) .BigButtonPanelArea2 .btn, html:not(.t-safari) .RadUpload .ruButton, html:not(.t-safari) .ruButton, html:not(.t-safari) .ruFileInput {
+    background: #a12040 !important;
+    background-size: auto;
+    background-size: 100% 100% !important;
+    color: #ffffff !important;
+	border-radius: 3px;
+	box-shadow: unset;
+}
+
+/* End Buttons  */
+
+/** header mobile **/
+@media (max-width: 767px) {
+  .navbar {
+      background-color: #a12040 !important;
+  }
+}
+/** end header **/
+
+/* menu */
+
+.RadMenu.RadMenu_GreatBarrierReef .rmRootGroup > .rmItem > .rmLink {
+    color: #a12040;
+	font-weight:bold;
+}
+
+.nav-secondary .sub-nav-head {
+    color: #a12040;
+}
+.RadMenu_GreatBarrierReef .rmSlide .rmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rmLink.rmFocused, .RadMenu_GreatBarrierReef .rmSlide .rsmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rsmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rsmLink.rmFocused, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink.rmFocused {
+    background-color: transparent;
+    color: #a12040;
+}
+
+@media (min-width: 768px) {
+  .RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmSelected,
+  .RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmExpanded,
+  .RadMenu.RadMenu_GreatBarrierReef .rmRootLink:hover,
+  .RadMenu.RadMenu_GreatBarrierReef .rmRootLink:focus,
+  .RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmFocused {
+    border-top: 0px;
+  }
+}
+
+/* end menu */
+
+
+/* footer */
+.footer-content, .footer-nav-copyright {
+    background-color: #20232b;
+    color: #FFFFFF;
+}
+
+/* end footer */
+
+/* fonts */
+
+h1 {
+    color: #4a4c60;
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    color: #4a4c60;
+    font-family: 'Merriweather', serif;
+    font-size: 180%;
+    font-weight: 600;
+    border: unset;
+}
+
+
+.text-underline h2 {
+    min-height: 0;
+    border-bottom-style: dotted;
+    border-bottom: 8px solid #4a4c60;
+    padding-bottom: 10px;
+    margin-left: -20px;
+}
+
+h5 {
+    color: #4a4c60;
+    background-color: unset;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0px 0px 10px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+h4, .h4, .SectionLabel {
+    color: #4a4c60;
+    font-family: 'Merriweather', serif;
+}
+
+h2.panel-title {
+    color: #4a4c60 !important;
+}
+
+.Spotlight .SectionLabel:after, .Spotlight h4:after {
+    border-bottom: 3px solid #a12040;
+}
+
+h1:after {
+    border-bottom: 3px solid #a12040;
+}
+
+/* end fonts */
+
+/*links */
+
+a:visited {
+    color: #001e60;
+}
+a {
+    color: #001e60;
+}
+
+
+/** homepage **/
+
+.Wrapper-HomePage .FullWidthArea-StyleBg4 blockquote {
+    margin-left: 60%;
+    color: #4a4c60;
+    width: 60% !important;
+    text-align: center !important;
+}
+
+.Wrapper-HomePage .FullWidthArea-StyleBg4 em {
+    display: block;
+}
+
+
+/** temp  **/
+
+.carousel-caption {
+    background-color: transparent;
+}

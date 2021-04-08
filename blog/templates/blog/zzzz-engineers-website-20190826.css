@@ -1,0 +1,155 @@
+
+@import url("/App_Themes/Websites_Global/zzzz-global-websites-20190826.css");
+
+/********************* SITE SPECIFIC *******/
+
+h5::before {
+    border-top: 4px solid #42c4e4;
+}
+
+#masterHeaderImage {
+    background-image: url("/images/PA/Dash_white_logos/PEA.png");
+}
+
+.header-logo-container {
+    border-top: 8px solid #42c4e4;
+}
+
+.RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmSelected {
+    border-bottom: 4px solid #42c4e4;
+    border-top: unset;
+}
+
+
+.RadMenu_GreatBarrierReef .rmSlide .rmFocused > .rmLink, .RadMenu_GreatBarrierReef .rmSlide .rmSelected > .rmLink, .RadMenu_GreatBarrierReef .rmSlide .rsmSelected > .rsmLink, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem.rsmSelected > .rsmLink {
+    background-color: transparent;
+    color: #42c4e4;
+}
+
+.RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmSelected, .RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmExpanded, .RadMenu.RadMenu_GreatBarrierReef .rmRootLink:hover, .RadMenu.RadMenu_GreatBarrierReef .rmRootLink:focus, .RadMenu.RadMenu_GreatBarrierReef .rmRootLink.rmFocused {
+    border-top: unset;
+}
+
+.rmItem.rmLast a span {
+    background-color: #42c4e4;
+}
+
+.rmLink.rmRootLink:hover {
+    color: #42c4e4 !important;
+}
+
+.rmItem.rmLast a span:hover {
+    background-color: #6bc9e0;
+    color: #fff;
+}
+
+.carousel-caption {
+    border-bottom: 8px solid #42c4e4;
+	max-width: 550px !important;
+}
+
+.blue-text {
+    color: #42c4e4;
+}
+
+.Wrapper-HomePage .FullWidthArea-StyleBg2 {
+    background: #fff url(/images/engineers/engineers-home-about.jpg);
+}
+
+.panel-overlay {
+    border-top: 8px solid #42c4e4;
+}
+
+.blog-highlight {
+    background-color: #42c4e4;
+}
+
+.join-header-1 {
+    background-color:#89cfe0;
+}
+
+.join-header-2 {
+    background-color:#6bc9e0;
+}
+
+.join-header-3 {
+    background-color:#42c4e4;
+}
+
+.join-features li:nth-child(even) { 
+    background: #dbf3f9; 
+}
+
+.join-features li:nth-child(1) { 
+    color:#42c4e4;
+}
+
+.RadMenu_GreatBarrierReef .rmSlide .rmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rmLink.rmFocused, .RadMenu_GreatBarrierReef .rmSlide .rsmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rsmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rsmLink.rmFocused, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:hover, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:focus, .RadMenu_GreatBarrierReef .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink.rmFocused {
+    color: #42c4e4;
+}
+
+/* added by RV */
+/* Sing In Box */
+.col-sm-6 {
+	padding-top: 80px !important;
+}
+/* Buttons  */
+html:not(.t-safari) .btn, html:not(.t-safari) .TextButton {
+    background: #2e3751 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 15px !important;
+	background-size: 100% 100% !important;
+	border-radius: 3px !important;
+	box-shadow: unset !important;
+}
+.TextButton a {
+ color: #ffffff !important;
+}
+/* End Buttons  */
+
+/* added by NP for Safari */
+html.t-safari .PrimaryButton, html.t-safari .SaveAndClose, html.t-safari .SaveAs, html.t-safari .UsePrimaryButton .TextButton, html.t-safari .UsePrimaryButton .TextButtonWithImage, html.t-safari #masterHeaderActionArea a, html.t-safari .RadGrid input.PrimaryButton, html.t-safari .Spotlight .TextButton, html.t-safari .BigButtonPanelArea2 .btn, html.t-safari .RadUpload .ruButton, html.t-safari .ruButton, html.t-safari .ruFileInput {
+background-color: #2E3751 !important;
+color: white !important;
+test-decoration: none;
+padding: 10px 15px;
+border-radius: 3px;
+box-shadow: unset;
+}
+
+/* added by RV, style for the join form */
+input[type=text], select, input[type=password] {
+	display: block;
+	width: 380px;
+	max-width: 100%;
+	border-radius: .5em;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciNewContentCollectionOrganizerCommon_ciNewContentCollectionOrganizerCommon_NewPanelEditorCommon21_panelEditor_CsContact___BirthDaterad_Dp_wrapper {
+	display: block;
+	width: 380px;
+	border-radius: .5em;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciNewContentCollectionOrganizerCommon_ciNewContentCollectionOrganizerCommon_NewContactAccountCreatorCommon_primaryOrgSelector_PrimaryOrganizationComboBox {
+	display: block !important;
+	width: 380px !important;
+	border-radius: .5em !important;
+}
+
+/* added by RV, swap the Join  blogs boxes*/
+.card-shadow {
+	margin-top: 20px;
+	margin-bottom: none !important;
+}
+.grey-bg-box {
+	margin-bottom: 10px !important;
+	margin-top:none !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciNewContactAccountCreatorCommon_ciNewContactAccountCreatorCommon_primaryOrgSelector_PrimaryOrganizationComboBox {
+	display: block !important;
+	width: 380px !important;
+	border-radius: .5em !important;
+}
+
